@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stockfish Chess Engine</title>
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/chessboardjs@1.0.0/www/css/chessboard-1.0.0.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>♟ Stockfish Chess</h1>
+    <p>Challenge the Stockfish AI engine</p>
+
+    <div id="board"></div>
+
+    <div class="controls">
+        <button onclick="newGame()">New Game</button>
+        <button onclick="undoMove()">Undo</button>
+    </div>
+
+    <div class="settings">
+        <label>Difficulty:</label>
+        <select id="level">
+            <option value="1">Easy</option>
+            <option value="5" selected>Medium</option>
+            <option value="10">Hard</option>
+            <option value="15">Expert</option>
+        </select>
+    </div>
+
+    <h3 id="status">Your move!</h3>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="https://unpkg.com/chessboardjs@1.0.0/www/js/chessboard-1.0.0.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
